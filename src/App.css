@@ -1,38 +1,60 @@
 .App {
+  text-align: left;
+}
+
+
+.create {
+  border: 1px solid gainsboro; 
+  background-color: rgb(250, 248, 248);
+  padding: 1em;
+  margin-top: 20px;
+}
+
+.cardList {
+  width:100%; 
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid gainsboro; 
+  background-color: rgb(250, 248, 248);
+  padding: 1em;
+  margin: 5px; 
+  width: 150px; 
+}
+
+.cardItem {
+  width:100%; 
+}
+
+.cardItem > img {
+  width : 150px; 
+}
+
+.cardItemName {
+  width:100%;
+  padding-top: 3px;
+  padding-bottom: 3px; 
+}
+
+.cardDelete {
+  width: 20px;
+  background-color: grey; 
   text-align: center;
+  margin-left: auto; 
+  margin-right: 0; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"] {
+  background-color: yellowgreen;
+  border: none;
+  color: black;
+  padding: 7px;
+  width: 100px;
 }
